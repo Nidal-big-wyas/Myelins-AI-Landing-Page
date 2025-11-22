@@ -1,0 +1,6 @@
+# السماح لجميع محركات البحث بفهرسة الموقع بالكامل
+User-agent: *
+Allow: /
+
+# تحديد موقع خريطة الموقع (Sitemap)
+Sitemap: https://www.myelinsai.com/sitemap.xml
