@@ -3,54 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myelins AI - ذكاء يسرّع اليقين</title>
+    <title>Myelins AI - القوة التنبؤية لعملياتك</title>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z5E4ZVFC7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0Z5E4ZVFC7');
+</script>
+
+
+    <meta name="description" content="Myelins AI — صيانة تنبؤية للمصانع. نوقف الأعطال قبل حدوثها باستخدام الذكاء الاصطناعي.">
+    <meta property="og:title" content="Myelins AI — ذكاء يسرّع القرار" />
+    <meta property="og:image" content="https://www.myelinsai.com/images/hero-bg.jpg.png" />
+    <meta property="og:url" content="https://www.myelinsai.com/" />
+    <meta property="og:type" content="website" />
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"Myelins AI",
+      "url":"https://www.myelinsai.com/",
+      "logo":"https://www.myelinsai.com/images/logo-color.png",
+      "contactPoint":[{"@type":"ContactPoint","telephone":"+96876934313","contactType":"sales","areaServed":"OM","email":"info@myelinsai.com"}],
+      "sameAs":["https://www.instagram.com/myelinsai","https://x.com/Myelinsai"]
+    }
+    </script>
 </head>
 <body>
 
-    <!-- شريط التنقل -->
     <header class="navbar">
         <div class="container">
-            <img src="images/logo-color.png.png" alt="Myelins AI" class="logo">
-           <nav>
-    <ul>
-        <li><a href="#about" class="text-ar">عنّا</a><a href="#about" class="text-en" style="display:none;">About Us</a></li>
-        <li><a href="#solution" class="text-ar">ماذا نقدم</a><a href="#solution" class="text-en" style="display:none;">What We Offer</a></li>
-        <li><a href="#how" class="text-ar">كيف نعمل</a><a href="#how" class="text-en" style="display:none;">How We Work</a></li>
-        <li><a href="#contact" class="text-ar">تواصل معنا</a><a href="#contact" class="text-en" style="display:none;">Contact Us</a></li>
-    </ul>
-</nav>
-            <a href="#contact" class="cta-button">تواصل معنا</a>
-            <!-- زر تبديل اللغة -->
+            
+            <img src="images/logo-white.png" alt="Myelins AI" class="logo logo-dark">
+            
+            <nav>
+                <ul>
+                    <li><a href="#about" class="text-ar">عنّا</a><a href="#about" class="text-en" style="display:none;">About Us</a></li>
+                    <li><a href="#solution" class="text-ar">ماذا نقدم</a><a href="#solution" class="text-en" style="display:none;">What We Offer</a></li>
+                    <li><a href="#how" class="text-ar">كيف نعمل</a><a href="#how" class="text-en" style="display:none;">How We Work</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#contact" class="cta-button text-ar">تواصل معنا</a>
+            <a href="#contact" class="cta-button text-en" style="display:none;">Contact Us</a>
+
             <div class="language-switcher">
                 <button id="lang-ar" class="lang-btn active">العربية</button>
                 <button id="lang-en" class="lang-btn">English</button>
             </div>
+            
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="dark-mode-toggle">
+                    <input type="checkbox" id="dark-mode-toggle" />
+                    <div class="slider round">
+                        <span class="icon-sun">☀️</span>
+                        <span class="icon-moon">🌙</span>
+                    </div>
+                </label>
+            </div>
         </div>
     </header>
 
-<!-- منطقة البطل -->
-<section class="hero" id="home">
-    <div class="container">
-        <div class="hero-content">
-            <h1 class="text-ar">Myelins AI: ذكاء يسرّع اليقين.</h1>
-            <h1 class="text-en" style="display:none;">Myelins AI: Intelligence that Accelerates Certainty.</h1>
-            <p class="text-ar">نوقف الأعطال قبل حدوثها. نحول بيانات مصنعك إلى قوة تنبؤية.</p>
-            <p class="text-en" style="display:none;">We stop failures before they happen. We turn your factory data into predictive power.</p>
-            <a href="#solution" class="cta-button text-ar">اكتشف كيف نوفر لك الملايين</a>
-            <a href="#solution" class="cta-button text-en" style="display:none;">Discover How We Save You Millions</a>
+    <section class="hero" id="home">
+        <canvas id="neuro-canvas"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="text-ar">توقف عن ملاحقة الأعطال. Myelins AI يتنبأ بها.</h1>
+                <h1 class="text-en" style="display:none;">Stop Reacting to Failures. Myelins AI Predicts Them.</h1>
+                
+                <p class="text-ar">نحن نعزل الإشارة الحقيقية من ضجيج بيانات مصنعك. حوّل الصيانة من رد فعل مُكلف إلى قرار استباقي موفّر، باستخدام بياناتك الحالية فقط.</p>
+                <p class="text-en" style="display:none;">We isolate the true signal from your factory's data noise. Transform maintenance from a costly reaction to a cost-saving proactive decision, using only your existing data.</p>
+                
+                <a href="#solution" class="cta-button text-ar">اكتشف كيف نوفر لك الكثير</a>
+                <a href="#solution" class="cta-button text-en" style="display:none;">Discover How We Save You Millions</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-bg.jpg.png" alt="مصنع صناعي ذكي">
+            </div>
         </div>
-        <div class="hero-image">
-            <img src="images/hero-bg.jpg.png" alt="مصنع صناعي ذكي">
-        </div>
-    </div>
-</section>
+    </section>
 
-    <!-- المشكلة التي نحلها -->
-    <section class="problem" id="about">
+    <section class="problem" id="problem">
         <div class="container">
             <h2 class="text-ar">هل تشعر أن مصنعك يصرخ في صمت؟</h2>
             <h2 class="text-en" style="display:none;">Does your factory scream in silence?</h2>
@@ -64,10 +106,10 @@
                 </div>
                 <div class="card">
                     <div class="icon">📊</div>
-                    <h3 class="text-ar">البيانات الضخمة والضجيج</h3>
-                    <h3 class="text-en" style="display:none;">Big Data & Noise</h3>
-                    <p class="text-ar">أجهزتك تنتج بيانات هائلة، لكن الإشارة الحقيقية تضيع.</p>
-                    <p class="text-en" style="display:none;">Your machines generate massive data, but the real signal gets lost.</p>
+                    <h3 class="text-ar">الغرق في ضجيج البيانات</h3>
+                    <h3 class="text-en" style="display:none;">Drowning in Data Noise</h3>
+                    <p class="text-ar">لديك تيرابايت من البيانات، لكن لا توجد رؤية واضحة. الإشارات التحذيرية الحقيقية مدفونة تحت جبال من الضجيج.</p>
+                    <p class="text-en" style="display:none;">You have terabytes of data, but no clear insights. The real warning signs are buried under mountains of noise.</p>
                 </div>
                 <div class="card">
                     <div class="icon">🔧</div>
@@ -80,7 +122,6 @@
         </div>
     </section>
 
-    <!-- حلنا الفريد -->
     <section class="solution" id="solution">
         <div class="container">
             <h2 class="text-ar">Myelins AI: جهازك العصبي الصناعي الذكي.</h2>
@@ -91,23 +132,22 @@
                 </div>
                 <div class="solution-text">
                     <div class="step">
-                        <h3 class="text-ar">1. عزل الإشارة الحقيقية</h3>
-                        <h3 class="text-en" style="display:none;">1. Isolate the Real Signal</h3>
-                        <p class="text-ar">نستخدم الذكاء الاصطناعي لغربلة الضجيج البياني والكشف عن الإشارات الدقيقة التي تهم.</p>
-                        <p class="text-en" style="display:none;">We use AI to filter out noise and detect the critical signals that matter.</p>
+                        <h3 class="text-ar">1. نعزل الإشارة (Isolate)</h3>
+                        <h3 class="text-en" style="display:none;">1. Isolate the Signal</h3>
+                        <p class="text-ar">خوارزمياتنا لا تكتفي بجمع البيانات، بل تفلترها. نحن نعزل الأنماط الدقيقة التي تسبق العطل عن ملايين القراءات غير المهمة.</p>
+                        <p class="text-en" style="display:none;">Our advanced algorithms don't just collect data; they filter it. We isolate the subtle patterns that precede a failure from millions of irrelevant readings.</p>
                     </div>
                     <div class="step">
-                        <h3 class="text-ar">2. تسريع اليقين</h3>
-                        <h3 class="text-en" style="display:none;">2. Accelerate Certainty</h3>
-                        <p class="text-ar">نقدم تنبؤات دقيقة بالأعطال قبل أسابيع، مما يمنحك الوقت الكافي للتخطيط والإصلاح.</p>
-                        <p class="text-en" style="display:none;">We provide precise predictions of failures weeks in advance, giving you time to plan and fix.</p>
+                        <h3 class="text-ar">2. نسرّع القرار (Accelerate)</h3>
+                        <h3 class="text-en" style="display:none;">2. Accelerate the Decision</h3>
+                        <p class="text-ar">نحن لا نعطيك مجرد "احتمال". نقدم لك إنذاراً واضحاً وتوصية قابلة للتنفيذ: 'المضخة (أ) ستتعطل خلال 3 أسابيع. هذا هو الإجراء المطلوب.'</p>
+                        <p class="text-en" style="display:none;">We don't just give you a 'probability'. We give you a clear warning and an actionable recommendation: 'Pump A will fail in 3 weeks. Here is the required action.'</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- القيمة التي نقدمها -->
     <section class="value">
         <div class="container">
             <h2 class="text-ar">نتائج ملموسة. قيمة لا تُضاهى.</h2>
@@ -135,11 +175,11 @@
                     <p class="text-en" style="display:none;">Move from guessing to data-driven decisions.</p>
                 </div>
             </div>
-            <a href="#contact" class="cta-button">اطلب عرضًا توضيحيًا الآن!</a>
+            <a href="#contact" class="cta-button text-ar">اطلب عرضًا توضيحيًا الآن!</a>
+            <a href="#contact" class="cta-button text-en" style="display:none;">Request a Demo Now!</a>
         </div>
     </section>
 
-    <!-- كيف نبدأ معك -->
     <section class="how" id="how">
         <div class="container">
             <h2 class="text-ar">بساطة، سرعة، نتائج. هكذا نعمل.</h2>
@@ -147,36 +187,97 @@
             <div class="steps">
                 <div class="step-item">
                     <div class="step-number">1</div>
-                    <h3 class="text-ar">البرنامج التجريبي (90 يومًا)</h3>
-                    <h3 class="text-en" style="display:none;">Pilot Program (90 Days)</h3>
-                    <p class="text-ar">نبدأ بمشروع تجريبي مركز على أصل حرج واحد لديك، خلال 90 يومًا فقط.</p>
-                    <p class="text-en" style="display:none;">We start with a pilot on one critical asset, within just 90 days.</p>
+                    <div class="step-content">
+                        <h3 class="text-ar">البرنامج التجريبي (90 يومًا)</h3>
+                        <h3 class="text-en" style="display:none;">Pilot Program (90 Days)</h3>
+                        <p class="text-ar">نبدأ بمشروع تجريبي مركز على أصل حرج واحد لديك، خلال 90 يومًا فقط.</p>
+                        <p class="text-en" style="display:none;">We start with a pilot on one critical asset, within just 90 days.</p>
+                    </div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">2</div>
-                    <h3 class="text-ar">استخدام بياناتك الحالية</h3>
-                    <h3 class="text-en" style="display:none;">Use Your Existing Data</h3>
-                    <p class="text-ar">نستخدم بياناتك الموجودة بالفعل – لا حاجة لأجهزة جديدة أو استثمارات إضافية.</p>
-                    <p class="text-en" style="display:none;">We use your existing data — no new devices or extra investments needed.</p>
+                    <div class="step-content">
+                        <h3 class="text-ar">صفر أجهزة جديدة (Zero Hardware)</h3>
+                        <h3 class="text-en" style="display:none;">Zero New Hardware</h3>
+                        <p class="text-ar">لماذا تشتري أجهزة استشعار جديدة؟ نظامنا يتكامل بسلاسة مع بياناتك الحالية. هذا يعني تكلفة أقل، وتنفيذ أسرع، وعائد فوري على الاستثمار.</p>
+                        <p class="text-en" style="display:none;">Why buy new sensors? Our system integrates seamlessly with your existing data. This means lower costs, faster implementation, and an immediate return on investment.</p>
+                    </div>
                 </div>
                 <div class="step-item">
                     <div class="step-number">3</div>
-                    <h3 class="text-ar">نتائج مثبتة</h3>
-                    <h3 class="text-en" style="display:none;">Proven Results</h3>
-                    <p class="text-ar">نثبت قيمتنا بتنبؤات دقيقة تمنع الأعطال. ثم نتوسع بناءً على نجاحك.</p>
-                    <p class="text-en" style="display:none;">We prove our value with accurate predictions that prevent failures. Then we scale with you.</p>
+                    <div class="step-content">
+                        <h3 class="text-ar">نتائج مثبتة</h3>
+                        <h3 class="text-en" style="display:none;">Proven Results</h3>
+                        <p class="text-ar">نثبت قيمتنا بتنبؤات دقيقة تمنع الأعطال. ثم نتوسع بناءً على نجاحك.</p>
+                        <p class="text-en" style="display:none;">We prove our value with accurate predictions that prevent failures. Then we scale with you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="industries" id="industries">
+        <div class="container">
+            <h2 class="text-ar">قطاعات نُحدث فيها فرقًا</h2>
+            <h2 class="text-en" style="display:none;">Industries We Empower</h2>
+            <div class="industry-grid">
+                <div class="ind-card"><span class="ind-icon">🛢️</span><h3 class="text-ar">النفط والغاز</h3><h3 class="text-en" style="display:none;">Oil & Gas</h3></div>
+                <div class="ind-card"><span class="ind-icon">🏭</span><h3 class="text-ar">التصنيع والإنتاج</h3><h3 class="text-en" style="display:none;">Manufacturing</h3></div>
+                <div class="ind-card"><span class="ind-icon">⚡</span><h3 class="text-ar">الطاقة والمياه</h3><h3 class="text-en" style="display:none;">Power & Water</h3></div>
+                <div class="ind-card"><span class="ind-icon">✈️</span><h3 class="text-ar">الطيران واللوجستيات</h3><h3 class="text-en" style="display:none;">Aviation & Logistics</h3></div>
+                <div class="ind-card"><span class="ind-icon">🏙️</span><h3 class="text-ar">المدن الذكية</h3><h3 class="text-en" style="display:none;">Smart Cities</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="text-ar">أسئلة يُعاد طرحها كثيرًا</h2>
+            <h2 class="text-en" style="display:none;">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-ar">هل أحتاج إلى تركيب أجهزة استشعار جديدة؟</h3>
+                        <h3 class="text-en" style="display:none;">Do I need to install new sensors?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-ar">لا. Myelins AI هو حلّ برمجي كامل (Software-only)، حيث نتصل مباشرة ببياناتك التاريخية والحالية من أنظمة SCADA أو Historians المتوفّرة لديك مسبقًا—دون أي تجهيزات إضافية.</p>
+                        <p class="text-en" style="display:none;">No. Myelins AI is a completely software-only solution. We connect directly to your existing historical and real-time data from SCADA or Historians—without any extra hardware.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-ar">كيف تضمنون أمن بيانات المصنع؟</h3>
+                        <h3 class="text-en" style="display:none;">How do you ensure data security?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-ar">نولي الأمن أعلى درجات الاهتمام. يمكن نشر حلولنا محليًا (On-Premise) داخل شبكتك الصناعية المعزولة، أو عبر سحابة آمنة ومشفّرة، وذلك بما يتوافق تمامًا مع سياسات الأمن السيبراني في شركتك.</p>
+                        <p class="text-en" style="display:none;">We prioritize security. Our solutions can be deployed On-Premise within your isolated industrial network, or via a secure encrypted cloud, fully compliant with your company's cybersecurity policies.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-ar">كم يستغرق الأمر لرؤية النتائج؟</h3>
+                        <h3 class="text-en" style="display:none;">How long to see results?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-ar">من خلال برنامجنا التجريبي السريع، نعمل على إثبات القيمة وتشغيل النموذج الأولي خلال 90 يومًا فقط؛ لتبدأ برؤية الفائدة بوقت قياسي.</p>
+                        <p class="text-en" style="display:none;">Through our rapid pilot program, we aim to prove value and have the initial model running within just 90 days, so you start seeing benefits in record time.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- من نحن -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h2 class="text-ar">فريق Myelins AI: رواد التحول الصناعي.</h2>
             <h2 class="text-en" style="display:none;">Myelins AI Team: Pioneers of Industrial Transformation.</h2>
             <div class="team">
-                <img src="images/team.jpg" alt="فريق Myelins AI" class="team-photo">
+                <img src="images/team.png" alt="فريق Myelins AI" class="team-photo">
                 <div class="team-info">
                     <p class="text-ar">نحن مجموعة من طلاب <strong>جامعة التقنية وعلوم التطبيقية بصلالة</strong> نجمع بين شغف الذكاء الاصطناعي، الأمن السيبراني، والهندسة لحل أكبر تحديات الصناعة.</p>
                     <p class="text-en" style="display:none;">We are a team of students from <strong>Salalah College of Technology and Applied Sciences</strong>, combining passion in AI, cybersecurity, and engineering to solve industry’s biggest challenges.</p>
@@ -185,60 +286,60 @@
         </div>
     </section>
 
-  <!-- تواصل معنا -->
-<section class="contact" id="contact">
-    <div class="container">
-        <h2 class="text-ar">جاهزون للتحول؟ تواصلوا معنا.</h2>
-        <h2 class="text-en" style="display:none;">Ready to transform? Contact us.</h2>
-        <div class="contact-content">
-            <form action="https://formspree.io/f/xknkzgva" method="POST">
-                <input type="text" name="name" placeholder="الاسم" class="text-ar" required>
-                <input type="text" name="name" placeholder="Name" class="text-en" style="display:none;" required>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="text-ar">جاهزون للتحول؟ تواصلوا معنا.</h2>
+            <h2 class="text-en" style="display:none;">Ready to transform? Contact us.</h2>
+            <div class="contact-content">
+                <form action="https://formspree.io/f/xknkzgva" method="POST">
+                    <input type="text" name="name" placeholder="الاسم" class="text-ar" required>
+                    <input type="text" name="name" placeholder="Name" class="text-en" style="display:none;" required>
 
-                <input type="email" name="email" placeholder="البريد الإلكتروني" class="text-ar" required>
-                <input type="email" name="email" placeholder="Email" class="text-en" style="display:none;" required>
+                    <input type="email" name="email" placeholder="البريد الإلكتروني" class="text-ar" required>
+                    <input type="email" name="email" placeholder="Email" class="text-en" style="display:none;" required>
 
-                <input type="tel" name="phone" placeholder="رقم الهاتف" class="text-ar" required>
-                <input type="tel" name="phone" placeholder="Phone Number" class="text-en" style="display:none;" required>
+                    <input type="tel" name="phone" placeholder="رقم الهاتف" class="text-ar" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" class="text-en" style="display:none;" required>
 
-                <textarea name="message" placeholder="رسالتك" class="text-ar" rows="5"></textarea>
-                <textarea name="message" placeholder="Your Message" class="text-en" style="display:none;" rows="5"></textarea>
+                    <textarea name="message" placeholder="رسالتك" class="text-ar" rows="5"></textarea>
+                    <textarea name="message" placeholder="Your Message" class="text-en" style="display:none;" rows="5"></textarea>
 
-                <button type="submit" class="cta-button text-ar">إرسال الرسالة</button>
-                <button type="submit" class="cta-button text-en" style="display:none;">Send Message</button>
-            </form>
-            <div class="contact-info">
-                <p class="text-ar"><strong>البريد الإلكتروني:</strong> <a href="mailto:info@myelinsai.com">info@myelinsai.com</a></p>
-                <p class="text-en" style="display:none;"><strong>Email:</strong> <a href="mailto:info@myelinsai.com">info@myelinsai.com</a></p>
-                <p class="text-ar"><strong>رقم الهاتف:</strong> <a href="tel:+96876934313">+968 76934313</a></p>
-                <p class="text-en" style="display:none;"><strong>Phone:</strong> <a href="tel:+96876934313">+968 76934313</a></p>
-                <p class="text-ar"><strong>واتساب:</strong> <a href="https://wa.me/96876934313" target="_blank">+968 76934313</a></p>
-                <p class="text-en" style="display:none;"><strong>WhatsApp:</strong> <a href="https://wa.me/96876934313" target="_blank">+968 76934313</a></p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/myelinsai?igsh=MTRwZzNsNmJ3OGRvNw==" target="_blank">Instagram</a>
-                    <a href="https://x.com/Myelinsai?t=amk--ZEc3e4CnccYtpXAPw&s=09" target="_blank">X (Twitter)</a>
+                    <button type="submit" class="cta-button text-ar">إرسال الرسالة</button>
+                    <button type="submit" class="cta-button text-en" style="display:none;">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p class="text-ar"><strong>البريد الإلكتروني:</strong> <a href="mailto:info@myelinsai.com">info@myelinsai.com</a></p>
+                    <p class="text-en" style="display:none;"><strong>Email:</strong> <a href="mailto:info@myelinsai.com">info@myelinsai.com</a></p>
+                    <p class="text-ar"><strong>رقم الهاتف:</strong> <a href="tel:+96876934313">+968 76934313</a></p>
+                    <p class="text-en" style="display:none;"><strong>Phone:</strong> <a href="tel:+96876934313">+968 76934313</a></p>
+                    <p class="text-ar"><strong>واتساب:</strong> <a href="https://wa.me/96876934313" target="_blank">+968 76934313</a></p>
+                    <p class="text-en" style="display:none;"><strong>WhatsApp:</strong> <a href="https://wa.me/96876934313" target="_blank">+968 76934313</a></p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/myelinsai?igsh=MTRwZzNsNmJ3OGRvNw==" target="_blank">Instagram</a>
+                        <a href="https://x.com/Myelinsai?t=amk--ZEc3e4CnccYtpXAPw&s=09" target="_blank">X (Twitter)</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- التذييل -->
     <footer>
         <div class="container">
-            <img src="images/logo-black.png" alt="Myelins AI" class="footer-logo">
+            
+            <img src="images/logo-white.png" alt="Myelins AI" class="footer-logo logo-dark">
+            
             <p class="text-ar">© 2025 Myelins AI. جميع الحقوق محفوظة.</p>
             <p class="text-en" style="display:none;">© 2025 Myelins AI. All rights reserved.</p>
+            
             <div class="footer-links">
-                <a href="#" class="text-ar">سياسة الخصوصية</a>
-                <a href="#" class="text-en" style="display:none;">Privacy Policy</a>
-                <a href="#" class="text-ar">شروط الخدمة</a>
-                <a href="#" class="text-en" style="display:none;">Terms of Service</a>
+                <a href="privacy.html" class="text-ar">سياسة الخصوصية</a>
+                <a href="privacy.html" class="text-en" style="display:none;">Privacy Policy</a>
+                <a href="terms.html" class="text-ar">شروط الخدمة</a>
+                <a href="terms.html" class="text-en" style="display:none;">Terms of Service</a>
             </div>
         </div>
     </footer>
 
-    <!-- زر واتساب عائم -->
     <a href="https://wa.me/96876934313" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">
     </a>
