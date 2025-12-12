@@ -4,233 +4,395 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myelins AI - القوة التنبؤية لعملياتك</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z5E4ZVFC7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-  gtag('config', 'G-0Z5E4ZVFC7');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z5E4ZVFC7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0Z5E4ZVFC7');
+    </script>
 
-
-    <meta name="description" content="Myelins AI — صيانة تنبؤية للمصانع. نوقف الأعطال قبل حدوثها باستخدام الذكاء الاصطناعي.">
-    <meta property="og:title" content="Myelins AI — ذكاء يسرّع القرار" />
-    <meta property="og:image" content="https://www.myelinsai.com/images/hero-bg.jpg.png" />
-    <meta property="og:url" content="https://www.myelinsai.com/" />
-    <meta property="og:type" content="website" />
-    
+    <meta name="description" content="Myelins AI — صيانة تنبؤية للمصانع.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Organization",
-      "name":"Myelins AI",
-      "url":"https://www.myelinsai.com/",
-      "logo":"https://www.myelinsai.com/images/logo-color.png",
-      "contactPoint":[{"@type":"ContactPoint","telephone":"+96876934313","contactType":"sales","areaServed":"OM","email":"info@myelinsai.com"}],
-      "sameAs":["https://www.instagram.com/myelinsai","https://x.com/Myelinsai"]
-    }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<body class="page-with-network" dir="rtl">
 
     <header class="navbar">
-        <div class="container">
-            
-            <img src="images/logo-white.png" alt="Myelins AI" class="logo logo-dark">
-            
-            <nav>
-                <ul>
-                    <li><a href="#about" class="text-ar">عنّا</a><a href="#about" class="text-en" style="display:none;">About Us</a></li>
-                    <li><a href="#solution" class="text-ar">ماذا نقدم</a><a href="#solution" class="text-en" style="display:none;">What We Offer</a></li>
-                    <li><a href="#how" class="text-ar">كيف نعمل</a><a href="#how" class="text-en" style="display:none;">How We Work</a></li>
-                </ul>
-            </nav>
-            
-            <a href="#contact" class="cta-button text-ar">تواصل معنا</a>
-            <a href="#contact" class="cta-button text-en" style="display:none;">Contact Us</a>
+  <div class="container">
+    <!-- الشعار + اسم النظام -->
+    <a href="index.html" class="logo-container">
+      <img src="images/logo-white.png" alt="Myelins AI" class="logo">
+      <div class="brand-text">
+        <span class="company-name">Myelins AI</span>
+        <span class="system-name text-ar" style="font-size: 0.85rem; color: #a5b4fc;">نظام لين</span>
+        <span class="system-name text-en" style="display:none; font-size: 0.85rem; color: #a5b4fc;">Lin System</span>
+      </div>
+    </a>
 
-            <div class="language-switcher">
-                <button id="lang-ar" class="lang-btn active">العربية</button>
-                <button id="lang-en" class="lang-btn">English</button>
-            </div>
-            
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="dark-mode-toggle">
-                    <input type="checkbox" id="dark-mode-toggle" />
-                    <div class="slider round">
-                        <span class="icon-sun">☀️</span>
-                        <span class="icon-moon">🌙</span>
-                    </div>
-                </label>
-            </div>
+    <!-- زر القائمة في الموبايل -->
+    <button class="mobile-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- المحتوى (القائمة + الأزرار) -->
+    <div class="nav-content">
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="#about" class="text-ar">عنّا</a>
+            <a href="#about" class="text-en" style="display:none;">About Us</a>
+          </li>
+          
+          <li>
+            <a href="#value" class="text-ar">ماذا نقدم</a>
+            <a href="#value" class="text-en" style="display:none;">What We Offer</a>
+          </li>
+          <li>
+            <a href="#how" class="text-ar">كيف نعمل</a>
+            <a href="#how" class="text-en" style="display:none;">How We Work</a>
+          </li>
+          <li>
+            <a href="#industries" class="text-ar">القطاعات</a>
+            <a href="#industries" class="text-en" style="display:none;">Industries</a>
+          </li>
+          <li>
+            <a href="#faq" class="text-ar">الأسئلة الشائعة</a>
+            <a href="#faq" class="text-en" style="display:none;">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="cta-button text-ar">تواصل معنا</a>
+        <a href="#contact" class="cta-button text-en" style="display:none;">Contact Us</a>
+
+        <div class="controls-wrapper">
+          <div class="language-switcher">
+            <button id="lang-ar" class="lang-btn active">العربية</button>
+            <button id="lang-en" class="lang-btn">English</button>
+          </div>
+
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="dark-mode-toggle">
+              <input type="checkbox" id="dark-mode-toggle" />
+              <div class="slider round">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+              </div>
+            </label>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
+</header>
+
 
     <section class="hero" id="home">
         <canvas id="neuro-canvas"></canvas>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="text-ar">توقف عن ملاحقة الأعطال. Myelins AI يتنبأ بها.</h1>
-                <h1 class="text-en" style="display:none;">Stop Reacting to Failures. Myelins AI Predicts Them.</h1>
-                
-                <p class="text-ar">نحن نعزل الإشارة الحقيقية من ضجيج بيانات مصنعك. حوّل الصيانة من رد فعل مُكلف إلى قرار استباقي موفّر، باستخدام بياناتك الحالية فقط.</p>
-                <p class="text-en" style="display:none;">We isolate the true signal from your factory's data noise. Transform maintenance from a costly reaction to a cost-saving proactive decision, using only your existing data.</p>
-                
-                <a href="#solution" class="cta-button text-ar">اكتشف كيف نوفر لك الكثير</a>
-                <a href="#solution" class="cta-button text-en" style="display:none;">Discover How We Save You Millions</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero-bg.jpg.png" alt="مصنع صناعي ذكي">
-            </div>
-        </div>
+       <div class="hero-content">
+  <h1 class="text-ar">
+    أوقف الأعطال قبل أن تُوقفك.<br>Myelins AI يتنبأ بها بدقّة.
+  </h1>
+  <h1 class="text-en" style="display:none;">
+    Stop failures before they stop you.<br>Myelins AI predicts them with precision.
+  </h1>
+
+  <p class="text-ar">
+    نستخدم تحليلات تنبؤية على بيانات مصنعك الحيّة لنكشف الأعطال مبكرًا،
+    فنحوّل الصيانة من ردّ فعل مُكلف إلى قرار استباقي يحمي أصولك الحرجة.
+  </p>
+  <p class="text-en" style="display:none;">
+    We apply predictive analytics on your live plant data to detect failures early,
+    turning maintenance from a costly reaction into a proactive decision that protects your critical assets.
+  </p>
+
+  <a href="#how" class="cta-button text-ar">
+    اكتشف رحلة البيانات داخل Myelins AI
+  </a>
+  <a href="#how" class="cta-button text-en" style="display:none;">
+    Explore the Myelins AI data journey
+  </a>
+</div>
+
     </section>
 
-    <section class="problem" id="problem">
+<section id="problem" class="problem scroll-reveal fade-right">
         <div class="container">
             <h2 class="text-ar">هل تشعر أن مصنعك يصرخ في صمت؟</h2>
             <h2 class="text-en" style="display:none;">Does your factory scream in silence?</h2>
             <div class="problem-cards">
-                <div class="card">
-                    <div class="icon">⏱️</div>
-                    <h3 class="text-ar">التوقفات المفاجئة</h3>
-                    <h3 class="text-en" style="display:none;">Unexpected Downtime</h3>
-                    <p class="text-ar">تكلفة ساعة واحدة من التوقف تصل إلى ملايين الدولارات.</p>
-                    <p class="text-en" style="display:none;">The cost of one hour of downtime can reach millions of dollars.</p>
+               <div class="card scroll-reveal">
+                    <div class="icon-box">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h3 class="text-ar">التوقفات المفاجِئة عالية الكلفة</h3>
+<h3 class="text-en" style="display:none;">High-impact unexpected downtime</h3>
+<p class="text-ar">
+  توقّف ساعة واحدة في خط إنتاج حرج قد يعني خسائر بملايين الدولارات
+  وتعطّل سلاسل التوريد بالكامل.
+</p>
+<p class="text-en" style="display:none;">
+  One hour of unplanned stoppage on a critical line can mean millions in losses
+  and a disrupted supply chain.
+</p>
+
                 </div>
-                <div class="card">
-                    <div class="icon">📊</div>
-                    <h3 class="text-ar">الغرق في ضجيج البيانات</h3>
-                    <h3 class="text-en" style="display:none;">Drowning in Data Noise</h3>
-                    <p class="text-ar">لديك تيرابايت من البيانات، لكن لا توجد رؤية واضحة. الإشارات التحذيرية الحقيقية مدفونة تحت جبال من الضجيج.</p>
-                    <p class="text-en" style="display:none;">You have terabytes of data, but no clear insights. The real warning signs are buried under mountains of noise.</p>
+                <div class="card scroll-reveal">
+                    <div class="icon-box">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h2l2 5 2-10 2 5 2-10 2 5h2"></path><path d="M16 8h6"></path><path d="M16 12h6"></path><path d="M16 16h6"></path></svg>
+                    </div>
+                    <h3 class="text-ar">ضجيج بيانات بدون رؤية حقيقية</h3>
+<h3 class="text-en" style="display:none;">Data noise with no real insight</h3>
+<p class="text-ar">
+  تملك تيرابايت من القراءات الحسية والتقارير،
+  لكن بدون طبقة ذكاء تحليلي لا تتحوّل هذه البيانات إلى قرارات عملية.
+</p>
+<p class="text-en" style="display:none;">
+  You own terabytes of sensor readings and reports,
+  but without an intelligence layer they rarely turn into actionable decisions.
+</p>
+
                 </div>
-                <div class="card">
-                    <div class="icon">🔧</div>
-                    <h3 class="text-ar">الصيانة التفاعلية المكلفة</h3>
-                    <h3 class="text-en" style="display:none;">Costly Reactive Maintenance</h3>
-                    <p class="text-ar">الإصلاح بعد العطل يكلف أكثر بكثير من المنع.</p>
-                    <p class="text-en" style="display:none;">Fixing after failure costs much more than prevention.</p>
+                <div class="card scroll-reveal">
+                    <div class="icon-box">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    </div>
+                    <h3 class="text-ar">صيانة تفاعلية تستنزف الميزانية</h3>
+<h3 class="text-en" style="display:none;">Reactive maintenance draining budgets</h3>
+<p class="text-ar">
+  إصلاح الأعطال بعد وقوعها يعني قطع غيار عاجلة، عمل إضافي، وتوقف إنتاج متكرر —
+  بينما كان يمكن منع معظمها بالتنبؤ المبكر.
+</p>
+<p class="text-en" style="display:none;">
+  Fixing failures after they happen means rush parts, overtime,
+  and recurring downtime — most of which could be prevented with early prediction.
+</p>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="solution" id="solution">
+    <section id="how" class="how scroll-reveal fade-right">
         <div class="container">
-            <h2 class="text-ar">Myelins AI: جهازك العصبي الصناعي الذكي.</h2>
-            <h2 class="text-en" style="display:none;">Myelins AI: Your Smart Industrial Nervous System.</h2>
-            <div class="solution-content">
-                <div class="solution-image">
-                    <img src="images/solution-illustration.png.png" alt="عزل الإشارة وتسريع اليقين">
+            <h2 class="text-ar section-title">رحلة البيانات: من الفوضى إلى القرار</h2>
+            <h2 class="text-en section-title" style="display:none;">Data Journey: From Chaos to Decision</h2>
+            
+            <div class="steps-grid">
+                <div class="modern-step-card">
+                    <div class="step-badge">01</div>
+                    <div class="step-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                    </div>
+                    <h3 class="text-ar">التوصيل الآمن بالأنظمة الحالية</h3>
+<h3 class="text-en" style="display:none;">Secure connection to existing systems</h3>
+<p class="text-ar">
+  نربط Myelins AI بأنظمة التحكم وبياناتك التاريخية دون الحاجة لتركيب أجهزة جديدة،
+  مع احترام كامل لسياسات الأمن الصناعي.
+</p>
+<p class="text-en" style="display:none;">
+  We connect Myelins AI to your existing control systems and historical data
+  with no new hardware, fully aligned with your industrial security policies.
+</p>
+
                 </div>
-                <div class="solution-text">
-                    <div class="step">
-                        <h3 class="text-ar">1. نعزل الإشارة (Isolate)</h3>
-                        <h3 class="text-en" style="display:none;">1. Isolate the Signal</h3>
-                        <p class="text-ar">خوارزمياتنا لا تكتفي بجمع البيانات، بل تفلترها. نحن نعزل الأنماط الدقيقة التي تسبق العطل عن ملايين القراءات غير المهمة.</p>
-                        <p class="text-en" style="display:none;">Our advanced algorithms don't just collect data; they filter it. We isolate the subtle patterns that precede a failure from millions of irrelevant readings.</p>
+
+                <div class="modern-step-card">
+                    <div class="step-badge">02</div>
+                    <div class="step-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
                     </div>
-                    <div class="step">
-                        <h3 class="text-ar">2. نسرّع القرار (Accelerate)</h3>
-                        <h3 class="text-en" style="display:none;">2. Accelerate the Decision</h3>
-                        <p class="text-ar">نحن لا نعطيك مجرد "احتمال". نقدم لك إنذاراً واضحاً وتوصية قابلة للتنفيذ: 'المضخة (أ) ستتعطل خلال 3 أسابيع. هذا هو الإجراء المطلوب.'</p>
-                        <p class="text-en" style="display:none;">We don't just give you a 'probability'. We give you a clear warning and an actionable recommendation: 'Pump A will fail in 3 weeks. Here is the required action.'</p>
+                    <h3 class="text-ar">معالجة ذكية للإشارات</h3>
+<h3 class="text-en" style="display:none;">Intelligent signal processing</h3>
+<p class="text-ar">
+  ننظّف الضجيج، ونستخرج الأنماط الخفية باستخدام نماذج ذكاء اصطناعي
+  مصمّمة خصيصًا لبيئات العمليات الصناعية.
+</p>
+<p class="text-en" style="display:none;">
+  We denoise your signals and extract hidden patterns using AI models
+  tailored for industrial operations environments.
+</p>
+
+                </div>
+
+                <div class="modern-step-card">
+                    <div class="step-badge">03</div>
+                    <div class="step-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
                     </div>
+                   <h3 class="text-ar">تنبؤ مبكر بالأعطال الحرجة</h3>
+<h3 class="text-en" style="display:none;">Early prediction of critical failures</h3>
+<p class="text-ar">
+  نحول مخرجات النماذج إلى تنبيهات واضحة وتوصيات عملية
+  تُمكّنك من التخطيط للصيانة قبل أسابيع من نقطة الفشل.
+</p>
+<p class="text-en" style="display:none;">
+  We turn model outputs into clear alerts and actionable recommendations,
+  enabling you to plan maintenance weeks before failure.
+</p>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="value">
-        <div class="container">
-            <h2 class="text-ar">نتائج ملموسة. قيمة لا تُضاهى.</h2>
-            <h2 class="text-en" style="display:none;">Tangible Results. Unmatched Value.</h2>
+    <section class="value" id="value">
+    <div class="container">
+       <h2 class="text-ar">نتائج قابلة للقياس. قيمة مستمرة لأصولك.</h2>
+<h2 class="text-en" style="display:none;">Measurable results. Lasting value for your assets.</h2>
             <div class="value-cards">
-                <div class="card">
-                    <div class="icon">💰</div>
-                    <h3 class="text-ar">توفير التكاليف</h3>
-                    <h3 class="text-en" style="display:none;">Cost Savings</h3>
-                    <p class="text-ar">قلل تكاليف الصيانة بنسبة تصل إلى 40%.</p>
-                    <p class="text-en" style="display:none;">Reduce maintenance costs by up to 40%.</p>
+                <div class="card scroll-reveal">
+                    <div class="icon-box">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><line x1="12" y1="18" x2="12" y2="6"></line></svg>
+                    </div>
+                    <h3 class="text-ar">خفض مباشر في تكاليف الصيانة</h3>
+<h3 class="text-en" style="display:none;">Direct maintenance cost reduction</h3>
+<p class="text-ar">
+  خفّض زيارات الصيانة الطارئة وطلبات القطع العاجلة
+  بنسبة قد تصل إلى 40% عبر التخطيط الاستباقي.
+</p>
+<p class="text-en" style="display:none;">
+  Cut emergency interventions and rush spare-part orders
+  by up to 40% through proactive planning.
+</p>
+
                 </div>
-                <div class="card">
-                    <div class="icon">📈</div>
-                    <h3 class="text-ar">زيادة الكفاءة</h3>
-                    <h3 class="text-en" style="display:none;">Increased Efficiency</h3>
-                    <p class="text-ar">عزز موثوقية أصولك وزد ساعات العمل.</p>
-                    <p class="text-en" style="display:none;">Enhance asset reliability and increase uptime.</p>
+                <div class="card scroll-reveal">
+                    <div class="icon-box">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    </div>
+                    <h3 class="text-ar">زيادة توافرية الأصول والإنتاج</h3>
+<h3 class="text-en" style="display:none;">Higher asset availability & throughput</h3>
+<p class="text-ar">
+  ارفع ساعات التشغيل الفعلي لخطوط الإنتاج الحرجة
+  وقلّل التوقفات غير المخطط لها إلى الحد الأدنى.
+</p>
+<p class="text-en" style="display:none;">
+  Increase actual runtime on critical lines
+  and bring unplanned downtime close to zero.
+</p>
+
                 </div>
-                <div class="card">
-                    <div class="icon">🧠</div>
-                    <h3 class="text-ar">اتخاذ قرارات ذكية</h3>
-                    <h3 class="text-en" style="display:none;">Smart Decision-Making</h3>
-                    <p class="text-ar">انتقل من التخمين إلى اتخاذ قرارات مبنية على بيانات دقيقة.</p>
-                    <p class="text-en" style="display:none;">Move from guessing to data-driven decisions.</p>
+               <div class="card scroll-reveal">
+                    <div class="icon-box">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"></path></svg>
+                    </div>
+                    <h3 class="text-ar">قرارات تنفيذية مبنية على بيانات</h3>
+<h3 class="text-en" style="display:none;">Executive decisions driven by data</h3>
+<p class="text-ar">
+  تقارير ولوحات تحكم واضحة تمنح الإدارة رؤية فورية
+  عن حالة الأصول، المخاطر، والعائد على الاستثمار.
+</p>
+<p class="text-en" style="display:none;">
+  Clear reports and dashboards give leadership instant visibility
+  into asset health, risk, and ROI.
+</p>
+
                 </div>
             </div>
-            <a href="#contact" class="cta-button text-ar">اطلب عرضًا توضيحيًا الآن!</a>
-            <a href="#contact" class="cta-button text-en" style="display:none;">Request a Demo Now!</a>
         </div>
     </section>
 
-    <section class="how" id="how">
-        <div class="container">
-            <h2 class="text-ar">بساطة، سرعة، نتائج. هكذا نعمل.</h2>
-            <h2 class="text-en" style="display:none;">Simple. Fast. Results. How we work.</h2>
-            <div class="steps">
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3 class="text-ar">البرنامج التجريبي (90 يومًا)</h3>
-                        <h3 class="text-en" style="display:none;">Pilot Program (90 Days)</h3>
-                        <p class="text-ar">نبدأ بمشروع تجريبي مركز على أصل حرج واحد لديك، خلال 90 يومًا فقط.</p>
-                        <p class="text-en" style="display:none;">We start with a pilot on one critical asset, within just 90 days.</p>
-                    </div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3 class="text-ar">صفر أجهزة جديدة (Zero Hardware)</h3>
-                        <h3 class="text-en" style="display:none;">Zero New Hardware</h3>
-                        <p class="text-ar">لماذا تشتري أجهزة استشعار جديدة؟ نظامنا يتكامل بسلاسة مع بياناتك الحالية. هذا يعني تكلفة أقل، وتنفيذ أسرع، وعائد فوري على الاستثمار.</p>
-                        <p class="text-en" style="display:none;">Why buy new sensors? Our system integrates seamlessly with your existing data. This means lower costs, faster implementation, and an immediate return on investment.</p>
-                    </div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3 class="text-ar">نتائج مثبتة</h3>
-                        <h3 class="text-en" style="display:none;">Proven Results</h3>
-                        <p class="text-ar">نثبت قيمتنا بتنبؤات دقيقة تمنع الأعطال. ثم نتوسع بناءً على نجاحك.</p>
-                        <p class="text-en" style="display:none;">We prove our value with accurate predictions that prevent failures. Then we scale with you.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+
     <section class="industries" id="industries">
-        <div class="container">
-            <h2 class="text-ar">قطاعات نُحدث فيها فرقًا</h2>
-            <h2 class="text-en" style="display:none;">Industries We Empower</h2>
-            <div class="industry-grid">
-                <div class="ind-card"><span class="ind-icon">🛢️</span><h3 class="text-ar">النفط والغاز</h3><h3 class="text-en" style="display:none;">Oil & Gas</h3></div>
-                <div class="ind-card"><span class="ind-icon">🏭</span><h3 class="text-ar">التصنيع والإنتاج</h3><h3 class="text-en" style="display:none;">Manufacturing</h3></div>
-                <div class="ind-card"><span class="ind-icon">⚡</span><h3 class="text-ar">الطاقة والمياه</h3><h3 class="text-en" style="display:none;">Power & Water</h3></div>
-                <div class="ind-card"><span class="ind-icon">✈️</span><h3 class="text-ar">الطيران واللوجستيات</h3><h3 class="text-en" style="display:none;">Aviation & Logistics</h3></div>
-                <div class="ind-card"><span class="ind-icon">🏙️</span><h3 class="text-ar">المدن الذكية</h3><h3 class="text-en" style="display:none;">Smart Cities</h3></div>
-            </div>
-        </div>
-    </section>
+  <div class="container">
+    <!-- العنوان -->
+    <h2 class="text-ar">قطاعات نُحدث فيها فرقًا حقيقيًا</h2>
+    <h2 class="text-en" style="display:none;">Industries where we create real impact</h2>
 
-    <section class="faq">
+    <!-- شبكة القطاعات -->
+    <div class="industry-grid industries-narrow">
+      <!-- 🛢 النفط والغاز -->
+      <div class="ind-card card-pulse">
+        <div class="icon-box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 21h18M7 21L12 3l5 18M9 15h6M8 11h8" />
+          </svg>
+        </div>
+        <h3 class="text-ar">النفط والغاز</h3>
+        <h3 class="text-en" style="display:none;">Oil &amp; Gas</h3>
+        <p class="text-ar">
+          من الحقول إلى المصافي، يتنبأ Myelins AI بأعطال المضخات والضواغط قبل وقوعها بأسابيع،
+          مما يقلل التوقفات غير المخططة ويحافظ على كفاءة الإنتاج.
+        </p>
+        <p class="text-en" style="display:none;">
+          From fields to refineries, Myelins AI predicts pump and compressor failures weeks in advance,
+          minimizing unplanned downtime and maintaining production efficiency.
+        </p>
+      </div>
+
+      <!-- 🏭 التصنيع -->
+      <div class="ind-card card-pulse">
+        <div class="icon-box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 21V10l4 3 4-3 4 3 4-3v11H3z" />
+          </svg>
+        </div>
+        <h3 class="text-ar">التصنيع</h3>
+        <h3 class="text-en" style="display:none;">Manufacturing</h3>
+        <p class="text-ar">
+          نحلّل بيانات خطوط الإنتاج لاكتشاف الانحرافات مبكرًا،
+          مما يقلل الأعطال المتكررة ويحسّن جودة المنتج النهائي.
+        </p>
+        <p class="text-en" style="display:none;">
+          We analyze production line data to detect early anomalies,
+          reducing recurring breakdowns and improving product quality.
+        </p>
+      </div>
+
+      <!-- ⚡ الطاقة والمياه -->
+      <div class="ind-card card-pulse">
+        <div class="icon-box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" />
+          </svg>
+        </div>
+        <h3 class="text-ar">الطاقة والمياه</h3>
+        <h3 class="text-en" style="display:none;">Power &amp; Water</h3>
+        <p class="text-ar">
+          نراقب بيانات المحطات وأنظمة التحكم لاكتشاف الانحرافات مبكرًا،
+          لضمان استمرارية الإمدادات وتقليل مخاطر الانقطاع.
+        </p>
+        <p class="text-en" style="display:none;">
+          We monitor plant and SCADA data to identify early deviations before they affect supply,
+          ensuring continuity of service and reducing operational risk.
+        </p>
+      </div>
+
+      <!-- 🏙 المدن الذكية -->
+      <div class="ind-card card-pulse">
+        <div class="icon-box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M4 21V9l6-4 6 4v12M9 21v-5h6v5M3 21h18" />
+          </svg>
+        </div>
+        <h3 class="text-ar">المدن الذكية</h3>
+        <h3 class="text-en" style="display:none;">Smart Cities</h3>
+        <p class="text-ar">
+          نربط بيانات المباني والبنية التحتية والمرور لتقديم تحليلات ذكية
+          تدعم الاستدامة وتحسّن جودة الحياة في المدن المستقبلية.
+        </p>
+        <p class="text-en" style="display:none;">
+          We connect data from buildings, infrastructure, and traffic systems to deliver smart analytics
+          that support sustainability and enhance quality of life in future cities.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="faq" id="faq">
+</div>
         <div class="container">
             <h2 class="text-ar">أسئلة يُعاد طرحها كثيرًا</h2>
             <h2 class="text-en" style="display:none;">Frequently Asked Questions</h2>
@@ -242,8 +404,8 @@
                         <span class="toggle-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p class="text-ar">لا. Myelins AI هو حلّ برمجي كامل (Software-only)، حيث نتصل مباشرة ببياناتك التاريخية والحالية من أنظمة SCADA أو Historians المتوفّرة لديك مسبقًا—دون أي تجهيزات إضافية.</p>
-                        <p class="text-en" style="display:none;">No. Myelins AI is a completely software-only solution. We connect directly to your existing historical and real-time data from SCADA or Historians—without any extra hardware.</p>
+                        <p class="text-ar">لا. Myelins AI هو حلّ برمجي كامل (Software-only)، حيث نتصل مباشرة ببياناتك التاريخية والحالية.</p>
+                        <p class="text-en" style="display:none;">No. Myelins AI is a completely software-only solution. We connect directly to your existing data.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -253,19 +415,8 @@
                         <span class="toggle-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p class="text-ar">نولي الأمن أعلى درجات الاهتمام. يمكن نشر حلولنا محليًا (On-Premise) داخل شبكتك الصناعية المعزولة، أو عبر سحابة آمنة ومشفّرة، وذلك بما يتوافق تمامًا مع سياسات الأمن السيبراني في شركتك.</p>
-                        <p class="text-en" style="display:none;">We prioritize security. Our solutions can be deployed On-Premise within your isolated industrial network, or via a secure encrypted cloud, fully compliant with your company's cybersecurity policies.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3 class="text-ar">كم يستغرق الأمر لرؤية النتائج؟</h3>
-                        <h3 class="text-en" style="display:none;">How long to see results?</h3>
-                        <span class="toggle-icon">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p class="text-ar">من خلال برنامجنا التجريبي السريع، نعمل على إثبات القيمة وتشغيل النموذج الأولي خلال 90 يومًا فقط؛ لتبدأ برؤية الفائدة بوقت قياسي.</p>
-                        <p class="text-en" style="display:none;">Through our rapid pilot program, we aim to prove value and have the initial model running within just 90 days, so you start seeing benefits in record time.</p>
+                        <p class="text-ar">نولي الأمن أعلى درجات الاهتمام. يمكن نشر حلولنا محليًا (On-Premise) داخل شبكتك الصناعية المعزولة.</p>
+                        <p class="text-en" style="display:none;">We prioritize security. Our solutions can be deployed On-Premise within your isolated industrial network.</p>
                     </div>
                 </div>
             </div>
@@ -274,50 +425,98 @@
 
     <section class="about" id="about">
         <div class="container">
-            <h2 class="text-ar">فريق Myelins AI: رواد التحول الصناعي.</h2>
-            <h2 class="text-en" style="display:none;">Myelins AI Team: Pioneers of Industrial Transformation.</h2>
+            <h2 class="text-ar">فريق Myelins AI</h2>
+            <h2 class="text-en" style="display:none;">Myelins AI Team</h2>
             <div class="team">
                 <img src="images/team.png" alt="فريق Myelins AI" class="team-photo">
                 <div class="team-info">
-                    <p class="text-ar">نحن مجموعة من طلاب <strong>جامعة التقنية وعلوم التطبيقية بصلالة</strong> نجمع بين شغف الذكاء الاصطناعي، الأمن السيبراني، والهندسة لحل أكبر تحديات الصناعة.</p>
-                    <p class="text-en" style="display:none;">We are a team of students from <strong>Salalah College of Technology and Applied Sciences</strong>, combining passion in AI, cybersecurity, and engineering to solve industry’s biggest challenges.</p>
+                   <p class="text-ar">
+  Myelins AI يقوده فريق متعدّد التخصصات من مهندسي البرمجيات
+  وتحليل البيانات وطلاب جامعة التقنية والعلوم التطبيقية بصلالة،
+  نعمل معا الصناعة لبناء حلول تنبؤية بمستوى ينافس الأنظمة العالمية.
+</p>
+<p class="text-en" style="display:none;">
+  Myelins AI is led by a multidisciplinary team of software engineers
+  and data practitioners from UTAS Salalah, working with industry partners
+  to build predictive solutions on par with global systems.
+</p>
+
                 </div>
             </div>
         </div>
     </section>
+<section id="vision-mission" class="vision-mission scroll-reveal">
+  <div class="container">
+    <h2 class="text-ar">رؤيتنا ورسالتنا</h2>
+    <h2 class="text-en" style="display:none;">Our Vision & Mission</h2>
+
+    <div class="vm-grid">
+      <!-- Vision -->
+      <div class="vm-card">
+        <h3 class="text-ar">الرؤية</h3>
+        <h3 class="text-en" style="display:none;">Vision</h3>
+
+        <p class="text-ar">
+          أن نعيد تعريف إدارة البيانات الصناعية من خلال حلول ذكية وبسيطة، تجعل كل مصنع وكل مخزن أكثر كفاءة وأمانًا،
+          مع تقليل التكاليف وتحويل التعقيد إلى وضوح. نطمح أن نكون الشريك الموثوق الذي يقود التحول الرقمي في الصناعة
+          العمانية، حيث تصبح البيانات أداة للابتكار وليست عبئًا.
+        </p>
+
+        <p class="text-en" style="display:none;">
+          To redefine industrial data management through smart, simple solutions that make every factory and warehouse
+          more efficient and secure, while reducing costs and turning complexity into clarity. We aspire to be the trusted
+          partner leading digital transformation in Omani industry, where data becomes a driver of innovation, not a burden.
+        </p>
+      </div>
+
+      <!-- Mission -->
+      <div class="vm-card">
+        <h3 class="text-ar">الرسالة</h3>
+        <h3 class="text-en" style="display:none;">Mission</h3>
+
+        <p class="text-ar">
+          نلتزم بابتكار نظام متكامل يعتمد على إنترنت الأشياء والتحليل الفوري للبيانات، لتقديم لوحات تحكم بسيطة وفعّالة،
+          تقلل من تعقيد المعلومات وتحوّلها إلى قرارات واضحة، مما يساعد الشركات على تحسين الأداء، خفض التكاليف،
+          وضمان استمرارية التشغيل بأمان.
+        </p>
+
+        <p class="text-en" style="display:none;">
+          We are committed to building an integrated system powered by IoT and real-time analytics, delivering simple and
+          effective dashboards that reduce information complexity and turn it into clear decisions — helping companies
+          improve performance, cut costs, and ensure safe, continuous operations.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slogan -->
+    <p class="slogan text-ar">
+      نربط المصانع بالذكاء، ونحوّل الأعطال إلى فرص.
+    </p>
+    <p class="slogan text-en" style="display:none;">
+      Connecting factories with intelligence, turning failures into opportunities.
+    </p>
+  </div>
+</section>
 
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="text-ar">جاهزون للتحول؟ تواصلوا معنا.</h2>
-            <h2 class="text-en" style="display:none;">Ready to transform? Contact us.</h2>
-            <div class="contact-content">
+            <h2 class="text-ar">جاهزون لرفع جاهزية أصولكم؟ تواصلوا معنا.</h2>
+            <h2 class="text-en" style="display:none;">Ready to boost your asset readiness? Contact us.</h2>
+
+            
+            <div class="contact-container">
                 <form action="https://formspree.io/f/xknkzgva" method="POST">
-                    <input type="text" name="name" placeholder="الاسم" class="text-ar" required>
-                    <input type="text" name="name" placeholder="Name" class="text-en" style="display:none;" required>
-
-                    <input type="email" name="email" placeholder="البريد الإلكتروني" class="text-ar" required>
-                    <input type="email" name="email" placeholder="Email" class="text-en" style="display:none;" required>
-
-                    <input type="tel" name="phone" placeholder="رقم الهاتف" class="text-ar" required>
-                    <input type="tel" name="phone" placeholder="Phone Number" class="text-en" style="display:none;" required>
-
-                    <textarea name="message" placeholder="رسالتك" class="text-ar" rows="5"></textarea>
-                    <textarea name="message" placeholder="Your Message" class="text-en" style="display:none;" rows="5"></textarea>
-
-                    <button type="submit" class="cta-button text-ar">إرسال الرسالة</button>
-                    <button type="submit" class="cta-button text-en" style="display:none;">Send Message</button>
+                    <input type="text" name="name" placeholder="الاسم / Name" required>
+                    <input type="email" name="email" placeholder="البريد الإلكتروني / Email" required>
+                    <input type="tel" name="phone" placeholder="رقم الهاتف / Phone">
+                    <textarea name="message" placeholder="رسالتك / Your Message" rows="4"></textarea>
+                    <button type="submit" class="cta-button" style="width: 100%;">إرسال / Send</button>
                 </form>
-                <div class="contact-info">
-                    <p class="text-ar"><strong>البريد الإلكتروني:</strong> <a href="mailto:info@myelinsai.com">info@myelinsai.com</a></p>
-                    <p class="text-en" style="display:none;"><strong>Email:</strong> <a href="mailto:info@myelinsai.com">info@myelinsai.com</a></p>
-                    <p class="text-ar"><strong>رقم الهاتف:</strong> <a href="tel:+96876934313">+968 76934313</a></p>
-                    <p class="text-en" style="display:none;"><strong>Phone:</strong> <a href="tel:+96876934313">+968 76934313</a></p>
-                    <p class="text-ar"><strong>واتساب:</strong> <a href="https://wa.me/96876934313" target="_blank">+968 76934313</a></p>
-                    <p class="text-en" style="display:none;"><strong>WhatsApp:</strong> <a href="https://wa.me/96876934313" target="_blank">+968 76934313</a></p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/myelinsai?igsh=MTRwZzNsNmJ3OGRvNw==" target="_blank">Instagram</a>
-                        <a href="https://x.com/Myelinsai?t=amk--ZEc3e4CnccYtpXAPw&s=09" target="_blank">X (Twitter)</a>
-                    </div>
+
+                <div class="contact-footer">
+                    <a href="mailto:info@myelinsai.com" class="contact-link">info@myelinsai.com</a>
+                    <a href="https://x.com/Myelinsai" target="_blank" class="contact-link">X (Twitter)</a>
+                    <a href="https://instagram.com/myelinsai" target="_blank" class="contact-link">Instagram</a>
                 </div>
             </div>
         </div>
@@ -325,12 +524,9 @@
 
     <footer>
         <div class="container">
-            
             <img src="images/logo-white.png" alt="Myelins AI" class="footer-logo logo-dark">
-            
             <p class="text-ar">© 2025 Myelins AI. جميع الحقوق محفوظة.</p>
             <p class="text-en" style="display:none;">© 2025 Myelins AI. All rights reserved.</p>
-            
             <div class="footer-links">
                 <a href="privacy.html" class="text-ar">سياسة الخصوصية</a>
                 <a href="privacy.html" class="text-en" style="display:none;">Privacy Policy</a>
@@ -340,10 +536,16 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/96876934313" class="whatsapp-float" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">
-    </a>
-
+    <div id="wa-widget" class="wa-widget">
+        <button class="wa-close" onclick="document.getElementById('wa-widget').style.display='none'" aria-label="Close">×</button>
+        <a href="https://wa.me/96876934313" target="_blank" class="wa-button">
+            <div class="wa-icon">
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="#ffffff"><path d="M16.75 4C10.5 4 5.25 9.25 5.25 15.5c0 2.5.8 4.8 2.1 6.7L6 27l5-1.3c1.8 1 3.9 1.5 6 1.5 6.25 0 11.5-5.25 11.5-11.5S23 4 16.75 4z"/></svg>
+            </div>
+            <span class="wa-text">تواصل مع خبير</span>
+        </a>
+    </div>
+<div class="theme-flash"></div>
     <script src="js/script.js"></script>
 </body>
 </html>
